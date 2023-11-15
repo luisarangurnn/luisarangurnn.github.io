@@ -1,0 +1,492 @@
+*, *:before, *::after {
+  box-sizing: inherit;
+}
+
+html a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+html h1 {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.2;
+  font-size: 4.8rem;
+}
+html h2 {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.2;
+  font-size: 4rem;
+}
+html h3 {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.2;
+  font-size: 3.2rem;
+}
+html h4 {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.2;
+  font-size: 2.8rem;
+}
+html p {
+  font-family: "Raleway", sans-serif;
+}
+html img {
+  max-width: 100%;
+}
+
+.contenedor {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  background-color: #398AB9;
+  justify-content: space-between;
+  align-items: center;
+}
+.barra .navegacion_enlace {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  padding: 20px 20px 20px 0;
+  border-bottom: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .barra {
+    grid-template-columns: 25% 50%;
+    background-color: #398AB9;
+    position: relative;
+  }
+  .barra .navegacion_enlace {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    padding: 30px 30px 20px 0;
+    border-bottom: 50px;
+    float: left;
+  }
+}
+.footer_total {
+  background-color: #398AB9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_total .footer_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_total .footer_parrafo {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .footer_total {
+    background-color: #398AB9;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+  }
+  .footer_total .footer_contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer_total .footer_parrafo {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: left;
+  }
+}
+.header_fondo {
+  background-image: url(../img/headerfondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+  position: relative;
+  height: 700px;
+}
+.header_fondo .contenido_header-fondo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.header_fondo .contenido_header-fondo .header_texto {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 200px;
+  padding: 0 0 0 0;
+}
+.header_fondo .contenido_header-fondo .header_texto h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+.header_fondo .contenido_header-fondo .header_texto h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+.header_fondo .contenido_header-fondo .header_texto p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 5px;
+}
+
+@media screen and (min-width: 320px) {
+  .header_fondo {
+    background-image: url(../img/headerfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    height: 700px;
+  }
+  .header_fondo .contenido_header-fondo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .header_fondo .contenido_header-fondo .header_texto {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 300px;
+    padding: 0 0 0 0;
+  }
+  .header_fondo .contenido_header-fondo .header_texto h1 {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 50px;
+  }
+  .header_fondo .contenido_header-fondo .header_texto h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .header_fondo .contenido_header-fondo .header_texto p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header_fondo {
+    background-image: url(../img/headerfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    height: 700px;
+  }
+  .header_fondo .contenido_header-fondo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .header_fondo .contenido_header-fondo .header_texto {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 200px;
+    padding: 0 0 0 0;
+  }
+  .header_fondo .contenido_header-fondo .header_texto h1 {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 60px;
+  }
+  .header_fondo .contenido_header-fondo .header_texto h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+  }
+  .header_fondo .contenido_header-fondo .header_texto p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+.main_index-titulo {
+  text-align: center;
+}
+
+.main_index-servicio {
+align-content: center;
+
+}
+
+.main_index-servicio h3 {
+  text-align: center;
+  font-size: 15px;
+}
+.main_index-servicio p {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  text-align: center;
+  
+}
+.main_index-servicio .servicio_svg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .main_index-titulo {
+    text-align: center;
+  }
+
+  .main_index-servicio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    padding-bottom: 20px;
+  }
+  .main_index-servicio h3 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .main_index-servicio p {
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .main_index-servicio .servicio_svg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+/* article index */
+article {
+  background-color: #1C658C;
+}
+
+.article_contenido {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+}
+.article_contenido p {
+  color: #ffffff;
+  font-size: 20px;
+}
+.article_contenido iframe {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+@media screen and (min-width: 320px) {
+  article {
+    background-color: #1C658C;
+  }
+
+  .article_contenido {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+  }
+  .article_contenido p {
+    color: #ffffff;
+    font-size: 25px;
+  }
+  .article_contenido iframe {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+@media screen and (min-width: 480px) {
+  article {
+    background-color: #1C658C;
+  }
+
+  .article_contenido {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0 20px 0;
+  }
+  .article_contenido p {
+    color: #ffffff;
+    font-size: 25px;
+    padding-top: 120px;
+    text-align: left;
+  }
+  .article_contenido iframe {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+.main_sobremi-contenido {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+}
+
+@media screen and (min-width: 320px) {
+  .main_sobremi-contenido {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .main_sobremi-contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 10px 40px 10px;
+  }
+
+  p {
+    padding-top: 60px;
+  }
+}
+.imagenes-sesiones {
+  display: flex;
+  flex-direction: column;
+}
+.imagenes-sesiones img {
+  padding-bottom: 20px;
+  border-radius: 2.5rem;
+  transition: all 2s;
+}
+.imagenes-sesiones img:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (min-width: 320px) {
+  .imagenes-sesiones {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenes-sesiones img {
+    width: auto;
+    border-radius: 2.5rem;
+    padding: 0 10px 20px 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .imagenes-sesiones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  .imagenes-sesiones img {
+    width: 80px;
+    padding: 0 10px 20px 10px;
+    border-right: 10px;
+    border-radius: 2.5rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .imagenes-sesiones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  .imagenes-sesiones img {
+    width: 100px;
+    padding: 0 20px 20px 20px;
+    border-radius: 2.5rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .imagenes-sesiones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  .imagenes-sesiones img {
+    width: 180px;
+    padding: 0 15px 20px 15px;
+    border-radius: 3rem;
+  }
+}
+.inspiracion-grid {
+  display: flex;
+  flex-direction: column;
+}
+.inspiracion-grid .inspiracion-personaje {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.inspiracion-grid .inspiracion-personaje img {
+  height: auto;
+  width: auto;
+  max-height: 120px;
+  max-width: 200px;
+  padding: 5px;
+  border-radius: 3rem;
+}
+.inspiracion-grid .inspiracion-personaje a {
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .inspiracion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .inspiracion-grid .inspiracion-personaje {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .inspiracion-grid .inspiracion-personaje img {
+    height: auto;
+    width: auto;
+    max-height: 180px;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 3rem;
+  }
+  .inspiracion-grid .inspiracion-personaje a {
+    text-align: center;
+  }
+}
+.container-contacto-primero {
+  padding-bottom: 20px;
+}
+.container-contacto-primero .container-contacto {
+  background-color: #1C658C;
+  border-radius: 3rem;
+}
+.container-contacto-primero .container-contacto label {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
